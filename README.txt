@@ -1,6 +1,6 @@
 NAT Hole Punching example written in C# using the UDT library - https://github.com/dump247/udt-net
 
-== What it does ==
+##What it does
 Very simple: shows how to punch a hole in the NAT using the standard RENDEZVOUZ method in UDT.
 
 The example connects to peers over the internet even when they are behind firewalls.
@@ -10,16 +10,16 @@ Components:
 * Server code: runs on an internet machine accessible to both peers. Its only mission is to exchange the public ips and ports between the two peers.
 * Client code: the one that will run in the two clients, each behind a different firewall. It contains code to get the peer public address (getting it from the server), and then the code to open a connection in UDT RENDEZVOUS mode. Then it includes same sample code to send/receive data.
 
-== How to run it ==
+##How to run it
 
-=== Server ===
+###Server
 Start it on a machine accessible by the two peers. Typically an Amazon/Azure host will do (remember to open the correct ports).
 
 udtholepunch server PORT_NUMBER
 
 where PORT_NUMBER is the port you want to use to listen and the one the clients will use to connect.
 
-=== Client ===
+###Client
 
 udtholepunch client local_port server server_port role
 
