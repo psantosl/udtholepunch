@@ -1,6 +1,6 @@
 NAT Hole Punching example written in C# using the UDT library - https://github.com/dump247/udt-net
 
-##What it does
+## What it does
 Very simple: shows how to punch a hole in the NAT using the standard RENDEZVOUZ method in UDT.
 
 The example connects to peers over the internet even when they are behind firewalls.
